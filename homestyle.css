@@ -1,0 +1,225 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*ID*/
+#logo{
+  color:black;
+  letter-spacing: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
+  padding: 0 45px;
+}
+
+#check{
+  display:none;
+}
+
+/*CLASS*/
+
+.bgimage{
+    background-image: url(img/dd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 20cm;
+    width:100%;
+}
+
+.hi{
+  text-align: center;
+  display: middle;
+  color :#0f131f;
+  font-weight: bold;
+  padding-top: 300px;
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 40px;
+  
+}
+
+.hr{
+  background-color: #0f131f;
+  margin: auto;
+  width: 20%;
+  height: 2px;
+}
+
+.cap{
+  text-align: center;
+  display: middle;
+  color: #0f131f;
+  padding-top: 25px;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: bold;
+  
+}
+
+
+.hr2{
+  background-color:#0f131f;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  margin-top: 2cm;
+}
+
+.hr3{
+  background-color: inherit;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  margin-top: 1cm;
+}
+
+.footer{
+  text-align: center;
+  display: middle;
+  background-color:inherit;
+  color:black;
+  padding:10px;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+  border-radius: 300px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+} 
+
+/*ELEMENT*/
+
+nav{
+  float: left;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  letter-spacing: 4px;
+  height: 100px;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5 px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 10px;
+}
+
+nav ul li a{
+  color:#0f131f;
+  font-size: 17px;
+  padding: 2px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+a.active{
+  background-color:#45b6fe;
+  color: black;
+  padding: 19px;
+  font-size: 17px;
+}
+
+nav ul li:hover a{
+  padding: 0px;
+  border-radius: 10px;
+  background-color:#45b6fe;
+  color:black;
+}
+
+/*MEDIA*/
+@media(max-width:952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}  
+
+@media(max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #6ac5fe;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.active{
+    background: #daf0ff;
+    color: black;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+
+  }
+  a:hover{
+    background: none;
+    color: #daf0ff;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+  #check:checked ~ul{
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 425px){ 
+  .hr{
+    background-color: #0f131f;
+    margin: auto;
+    width: 40%;
+    height: 2px;
+  }
+}
+
+
+@media screen and (min-width: 768px){ 
+  .hr{
+    background-color: #0f131f;
+    margin: auto;
+    width: 20%;
+    height: 2px;
+  }
+}
